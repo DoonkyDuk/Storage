@@ -1,0 +1,516 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>АСУ_Склад.Objects</name>
+    </assembly>
+    <members>
+        <member name="T:IIS.АСУ_Склад.Заказ">
+            <summary>
+            Заказ.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Заказ.Статус">
+            <summary>
+            Статус.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Заказ.Дата_Отгрузки">
+            <summary>
+            Дата_Отгрузки.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Заказ.Дата_Оплаты">
+            <summary>
+            Дата_Оплаты.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Заказ.Цена">
+            <summary>
+            Цена.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Заказ.Сотрудник">
+            <summary>
+            Заказ.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Заказ.Строка_Заказа">
+            <summary>
+            Заказ.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Заказ.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Заказ.Views.ЗаказE">
+            <summary>
+            "ЗаказE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Заказ.Views.ЗаказL">
+            <summary>
+            "ЗаказL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Должность">
+            <summary>
+            Должность.
+            </summary>
+        </member>
+        <member name="F:IIS.АСУ_Склад.Должность.Кладовщик">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.АСУ_Склад.Должность.Менеджер">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Склад">
+            <summary>
+            Склад.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Склад.Номер">
+            <summary>
+            Номер.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Склад.Адрес">
+            <summary>
+            Адрес.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Склад.Сотрудник">
+            <summary>
+            Склад.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Склад.Товар_на_Складе">
+            <summary>
+            Склад.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Склад.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Склад.Views.СкладE">
+            <summary>
+            "СкладE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Склад.Views.СкладL">
+            <summary>
+            "СкладL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Состояние_Заказа">
+            <summary>
+            Состояние_ заказа.
+            </summary>
+        </member>
+        <member name="F:IIS.АСУ_Склад.Состояние_Заказа.Новый">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.АСУ_Склад.Состояние_Заказа.Оплаченный">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.АСУ_Склад.Состояние_Заказа.Отмененный">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Товар_на_Складе">
+            <summary>
+            Товар_на_ складе.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Товар_на_Складе.Количество">
+            <summary>
+            Количество.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Товар_на_Складе.Склад">
+            <summary>
+            мастеровая ссылка на шапку IIS.АСУ_Склад.Склад.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Товар_на_Складе.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Товар_на_Складе.Views.Товар_на_СкладеE">
+            <summary>
+            "Товар_на_СкладеE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.DetailArrayOfТовар_на_Складе">
+            <summary>
+            Detail array of Товар_на_Складе.
+            </summary>
+        </member>
+        <member name="M:IIS.АСУ_Склад.DetailArrayOfТовар_на_Складе.#ctor(IIS.АСУ_Склад.Склад)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type Товар_на_Складе by index.
+            </summary>
+            <summary>
+            Adds object with type Товар_на_Складе.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Строка_Заказа">
+            <summary>
+            Строка_ заказа.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Строка_Заказа.Количество">
+            <summary>
+            Количество.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Строка_Заказа.Цена_с_Налогом">
+            <summary>
+            Цена_с_Налогом.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Строка_Заказа.Сумма">
+            <summary>
+            Сумма.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Строка_Заказа.Товар">
+            <summary>
+            Строка_ заказа.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Строка_Заказа.Заказ">
+            <summary>
+            мастеровая ссылка на шапку IIS.АСУ_Склад.Заказ.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Строка_Заказа.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Строка_Заказа.Views.Строка_ЗаказаE">
+            <summary>
+            "Строка_ЗаказаE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.DetailArrayOfСтрока_Заказа">
+            <summary>
+            Detail array of Строка_Заказа.
+            </summary>
+        </member>
+        <member name="M:IIS.АСУ_Склад.DetailArrayOfСтрока_Заказа.#ctor(IIS.АСУ_Склад.Заказ)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type Строка_Заказа by index.
+            </summary>
+            <summary>
+            Adds object with type Строка_Заказа.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Состояние_Накладной">
+            <summary>
+            Состояние_ накладной.
+            </summary>
+        </member>
+        <member name="F:IIS.АСУ_Склад.Состояние_Накладной.Новая">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.АСУ_Склад.Состояние_Накладной.Выписанная">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.АСУ_Склад.Состояние_Накладной.Приостановленная">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.АСУ_Склад.Состояние_Накладной.Готовая">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:IIS.АСУ_Склад.Состояние_Накладной.Отгруженная">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Накладная">
+            <summary>
+            Накладная.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Накладная.Статус">
+            <summary>
+            Статус.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Накладная.Дата_Время_Отгрузки">
+            <summary>
+            Дата_Время_Отгрузки.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Накладная.Сумма">
+            <summary>
+            Сумма.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Накладная.Вес">
+            <summary>
+            Вес.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Накладная.Примечание">
+            <summary>
+            Примечание.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Накладная.ФИО_Получателя">
+            <summary>
+            ФИО_Получателя.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Накладная.Сотрудник">
+            <summary>
+            Накладная.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Накладная.Запись_в_Накладной">
+            <summary>
+            Накладная.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Накладная.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Накладная.Views.НакладнаяE">
+            <summary>
+            "НакладнаяE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Накладная.Views.НакладнаяL">
+            <summary>
+            "НакладнаяL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Товар">
+            <summary>
+            Товар.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Товар.Код_Товара">
+            <summary>
+            Код_Товара.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Товар.Название">
+            <summary>
+            Название.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Товар.Единица_Измерения">
+            <summary>
+            Единица_Измерения.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Товар.Описание">
+            <summary>
+            Описание.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Товар.Цена">
+            <summary>
+            Цена.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Товар.Товар_на_Складе">
+            <summary>
+            Товар.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Товар.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Товар.Views.ТоварE">
+            <summary>
+            "ТоварE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Товар.Views.ТоварL">
+            <summary>
+            "ТоварL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Запись_в_Накладной">
+            <summary>
+            Запись_в_ накладной.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Запись_в_Накладной.Количество">
+            <summary>
+            Количество.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Запись_в_Накладной.Вес">
+            <summary>
+            Вес.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Запись_в_Накладной.Цена">
+            <summary>
+            Цена.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Запись_в_Накладной.Сумма">
+            <summary>
+            Сумма.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Запись_в_Накладной.Товар">
+            <summary>
+            Запись_в_ накладной.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Запись_в_Накладной.Накладная">
+            <summary>
+            мастеровая ссылка на шапку IIS.АСУ_Склад.Накладная.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Запись_в_Накладной.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Запись_в_Накладной.Views.Запись_в_НакладнойE">
+            <summary>
+            "Запись_в_НакладнойE" view.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.DetailArrayOfЗапись_в_Накладной">
+            <summary>
+            Detail array of Запись_в_Накладной.
+            </summary>
+        </member>
+        <member name="M:IIS.АСУ_Склад.DetailArrayOfЗапись_в_Накладной.#ctor(IIS.АСУ_Склад.Накладная)">
+            <summary>
+            Construct detail array.
+            </summary>
+            <summary>
+            Returns object with type Запись_в_Накладной by index.
+            </summary>
+            <summary>
+            Adds object with type Запись_в_Накладной.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Документ">
+            <summary>
+            Документ.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Документ.Номер">
+            <summary>
+            Номер.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Документ.Дата_Заполнения">
+            <summary>
+            Дата_Заполнения.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Документ.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Документ.Views.ДокументE">
+            <summary>
+            "ДокументE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Документ.Views.ДокументL">
+            <summary>
+            "ДокументL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Сотрудник">
+            <summary>
+            Сотрудник.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Сотрудник.Табельный_Номер">
+            <summary>
+            Табельный_Номер.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Сотрудник.Фамилия">
+            <summary>
+            Фамилия.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Сотрудник.Имя">
+            <summary>
+            Имя.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Сотрудник.Отчество">
+            <summary>
+            Отчество.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Сотрудник.Телефон">
+            <summary>
+            Телефон.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Сотрудник.EMail">
+            <summary>
+            EMail.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Сотрудник.Должность">
+            <summary>
+            Должность.
+            </summary>
+        </member>
+        <member name="T:IIS.АСУ_Склад.Сотрудник.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Сотрудник.Views.СотрудникE">
+            <summary>
+            "СотрудникE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.АСУ_Склад.Сотрудник.Views.СотрудникL">
+            <summary>
+            "СотрудникL" view.
+            </summary>
+        </member>
+    </members>
+</doc>
